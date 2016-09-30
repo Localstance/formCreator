@@ -1,0 +1,36 @@
+.output {
+  width: 45%;
+  margin: 30px 0;
+
+  &__title {
+    @include font-rules('Oswald', 2em, $raspberry, 16px, 400, uppercase);
+  }
+
+  &__container {
+    margin: 30px 0;
+    padding: 20px;
+    min-height: 350px;
+    max-height: 550px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    @include border(1px, solid, $gray-light);
+    @include box-shadow();
+    @include font-rules('SourceSanProLight', 2em, $gray-smooth, 16px, 400, none);
+
+    &::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
+
+  }
+
+}

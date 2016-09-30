@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Form builder</title>
+  <link rel="stylesheet" media="screen" href="css/reset.css">
+  <link rel="stylesheet" media="screen" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="wrapper">
+    <header class="header">
+      <div class="header__wrap">
+        <a href="#" class="header__logo" title="Company logo">
+          <span class="header__logo--brace">&#60; </span>FormBuilder /<span class="header__logo--brace">&#62;</span>
+        </a>
+        <div class="header__title hidden">
+          <h2><span class="js-username"></span>, welcome to our site!</h2>
+        </div>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--active"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__wrap">
+        <div class="main__form login">
+          <form action="#" class="login__form">
+            <label for="login__username" class="login__label">User:</label>
+            <input type="text" id="login__username" class="login__input">
+            <label for="login__password" class="login__label">Password:</label>
+            <input type="password" id="login__password" class="login__input">
+            <label for="login__remember" class="login__label">Remember me next time:</label>
+            <input type="checkbox" id="login__remember" class="login__input login__input--checkbox">
+            <button class="login__submit button button--success">Login</button>
+          </form>
+          <div class="controls">
+            <button class="button button--info controls__generate" title="Generate JSON from the form above">Generate JSON</button>
+          </div>
+        </div>
+        <div class="main__output output">
+          <h2 class="output__title">Generated JSON:</h2>
+          <div class="output__container"></div>
+        </div>
+      </div>
+      <div class="main__generated-form generated-form">
+        <h2 class="output__title hidden">Generated form from JSON:</h2>
+        <div class="generated-form__form login">
+
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrap">
+        <a href="#" class="footer__logo" title="Company logo">
+          <span class="footer__logo--brace">&#60; </span>FormBuilder /<span class="footer__logo--brace">&#62;</span>
+        </a>
+        <button class="logout-btn button button--info hidden">Logout</button>
+        <div class="footer__info social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link" title="Link to facebook account">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" title="Link to twitter account">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" title="Link to youtube channel">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link" title="Link to google plus account">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+          <span class="social__copyright">
+            &copy; Oleksandr Strelchenko, 2016
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="scripts/bundle.js"></script>
+</body>
+</html>
